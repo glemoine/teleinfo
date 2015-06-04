@@ -1143,7 +1143,7 @@ int tlf_check_frame( char * pframe)
   {
     // First SQL Fields, use date time from mysql server using NOW()
     strcpy(mysql_field, "DATE");
-    strcpy(mysql_value, "NOW()");
+    strcpy(mysql_value, "UTC_TIMESTAMP()");
   }
 #endif
 
